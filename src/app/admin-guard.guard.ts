@@ -10,6 +10,6 @@ export class AdminGuardGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): boolean {
     // if this booleran value is true you can see the admin-home component
-    return false;
+    return true;
   }
 }

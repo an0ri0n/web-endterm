@@ -7,9 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
-import { ServicesComponent } from './components/services/services.component';
-import { UserComponent } from './components/user/user.component';
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,14 +16,13 @@ import { AdminHomeComponent } from './components/admin-home/admin-home.component
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    ServicesComponent,
-    UserComponent,
     AdminHomeComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
